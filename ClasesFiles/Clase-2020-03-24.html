@@ -13,13 +13,7 @@
     <title>Clases</title>
     <link rel="stylesheet" type="text/css" media="screen,print" href="Home_files/Home.css" />
 
-  <!-- Seems I don't need this parti
-    <script type="text/javascript" src="Scripts/iWebSite.js"></script>
-    <script type="text/javascript" src="Scripts/Widgets/SharedResources/WidgetCommon.js"></script>
-    <script type="text/javascript" src="Scripts/Widgets/Navbar/navbar.js"></script>
-    <script type="text/javascript" src="Scripts/iWebImage.js"></script>
-    <script type="text/javascript" src="Home_files/Home.js"></script>
--->
+
 
 <!-- Following part is mathjax, for latex-->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -145,18 +139,18 @@ body {
 
 
 <h1> Análisis Real </h1>
-
+<!--
 <ul class="menu">
   <li class="menu"><a class="menu" href="Home.html">Home</a></li>
- <!--  <li class="menu"><a href="InfoPrimerDia.html"> Primer día de clases</a> </li> -->
+  <li class="menu"><a href="InfoPrimerDia.html"> Primer día de clases</a> </li>
   <li class="menu"><a class= "menu" href="Tareas.html"> Tareas </a></li>
-  <!--- <li class="menu"><a href="Moodle.html">Moodle Ciencias </a></li>
+   <li class="menu"><a href="Moodle.html">Moodle Ciencias </a></li>
   <li class="menu"><a href="Matlab.html">Matlab </a></li>
-  <li class="menu"><a href="ExternalLinks.html"> Links </a></li> -->
+  <li class="menu"><a href="ExternalLinks.html"> Links </a></li> 
   <li class="menu"><a class="menu" href="ExGenerales.html"> Exámenes generales </a></li>
   <li class="menu"><a class="menu" href="Clases.html"> Clases </a></li>
 </ul>
-
+-->
 
 <!--<div class="header">
  <h2>Blog Name</h2>
@@ -166,13 +160,85 @@ body {
  <div class="leftcolumn">
 
    <div class="card">
-     <h2> <a href="ClasesFiles/Clase-2020-03-24.html"> Martes 24 de marzo </a>  </h2>
+     <h2>Martes 24 de marzo  </h2>
+     <h4> Introducción a los espacios de Banach clásicos </h4>
+
+     <p> Para un espacio de medida \((X,\Sigma, \mu)\)
+     y un real \( p\in (0,\infty)\) se define el espacio
+     \(\mathcal{L}_p(X,\Sigma,\mu) \)
+     ó simplemente \(\mathcal{L}_p\) como: </p>
+
+     <p> \(\mathcal{L}_p:=\{ f\in M(X,\Sigma): \int |f|^pd\mu <\infty \}\) </p>
+
+     La propiedad fundamental de los espacios \(\mathcal{L}_p\)
+     es que forman un espacio vectorial. Por favor lean
+     la demostración de esta propiedad en el Teorema 6.2 </p>
 
 
-   </div>
+
+     Una de las herramientas técnicas más importantes
+     en los espacios \(\mathcal{L}_p\) es la desigualdad
+     de Holder. Pero, para ver la demostración de ésta
+     vamos a ver primero...
+
+     <h4> La desigualdad de Young </h4>
+     <p> Ya que la desigualdad de Young es bien bonita,
+       vamos a ver tres demostraciones. Se graban
+     la que más les guste. </p>
+
+     <p> Nota. Dados dos reales \(p,q\in (0,\infty)\),
+     decimos que son exponentes conjugados si:  </p>
+        <div>
+          <p> \( \frac{1}{p}+\frac{1}{q}=1 \) </p>
+        </div>
+
+     <p>Primera demostración (ésta usa la
+       desigualdad de Bernoulli):  <a href="PDFs/YoungScalarInequalityDem1.pdf" download>
+     Young1 </a> </p>
+
+     <p>Seguna demostración (ésta es muy geométrica):  <a href="PDFs/YoungScalarInequalityDem2.pdf" download>
+     Young2 </a> </p>
+
+     <p>Tercera demostración (ésta usa convexidad
+       y tiene el plus que se generaliza rápidamente):  <a href="PDFs/YoungScalarInequalityDem3.pdf" download>
+     Young3 </a> </p>
+
+     <h4> Desigualdad de Holder </h4>
+      <p> Ahora si, podemos pasar a la desigualdad de Holder. </p>
+
+      <p> Sean \(p,q\in (1,\infty)\) exponentes
+        conjugados. Si \( f\in \mathcal{L}_p, g\in \mathcal{L}_q\)
+      entonces </p>
+      <ol>
+        <li>\(fg \in \mathcal{L}_1 \),</li>
+      <li> \( \int |fg|d\mu  \leq  (|f|^pd\mu )^{1/p}
+      (\int |g|^qd\mu)^{1/q} \),</li>
+      <li> la igualdad se da  si y sólo si
+        \(  (\int |g|^q)|f|^p=
+        (\int |f|^p)|g|^q \) c.d. rel \(\mu \).
+      </li>
+    </ol>
+        <p>Lean
+      la demostración en el Teorema 6.3. Tal vez la única
+    parte que necesita aclaración es la última parte </p>
 
 
+     <p>Se adjunta demostración de esta parte.
+       <a href="https://www.dropbox.com/s/phrsbjr9v1km8fr/IgualdadHolder.pdf?dl=0"> Igualdad en Holder </a></p>
 
+
+   <h4> Ejercicios </h4>
+
+   <p> Ejercicio 61. Generalización de Holder.</p>
+
+   <p>
+     <iframe width="490" height="315"
+     src="https://www.youtube.com/embed/FlFsRS4mPXE" frameborder="2">
+     </iframe>
+
+   </p>
+
+</div>
 
  </div>
 </div>
