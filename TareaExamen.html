@@ -9,17 +9,29 @@
     <meta name="iWeb-Build" content="local-build-20111108" />
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
     <meta name="viewport" content="width=700" />
-    <title>Home</title>
+
+    <title>Clases</title>
     <link rel="stylesheet" type="text/css" media="screen,print" href="Home_files/Home.css" />
-    <!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Home_files/HomeIE.css'/><![endif]-->
-    <!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
+
+  <!-- Seems I don't need this parti
     <script type="text/javascript" src="Scripts/iWebSite.js"></script>
     <script type="text/javascript" src="Scripts/Widgets/SharedResources/WidgetCommon.js"></script>
     <script type="text/javascript" src="Scripts/Widgets/Navbar/navbar.js"></script>
     <script type="text/javascript" src="Scripts/iWebImage.js"></script>
     <script type="text/javascript" src="Home_files/Home.js"></script>
+-->
+
+<!-- Following part is mathjax, for latex-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
 
     <style>
+
+
+/* CSS for menu */
 ul.menu {
   list-style-type: none;
   margin: 0;
@@ -45,15 +57,92 @@ background-color: #c3c9dd;
 }
 
 
+
+
+/* CSS for blog */
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
  </style>
 
 
+
+
+
   </head>
+
+
+
   <body style="background: rgb(247, 246, 246); margin: 0pt; " onload="onPageLoad();" onunload="onPageUnload();">
     <div style="text-align: center; ">
 
     <div style="margin-bottom: 0px; margin-left: auto; margin-right: auto; margin-top: 0px; overflow: hidden;
     position: relative; word-wrap: break-word;  background: rgb(247, 246, 246); text-align: left; width: 700px; " id="body_content">
+
+
 
 <h1> Análisis Real </h1>
 
@@ -61,71 +150,41 @@ background-color: #c3c9dd;
   <li class="menu"><a class="menu" href="Home.html">Home</a></li>
  <!--  <li class="menu"><a href="InfoPrimerDia.html"> Primer día de clases</a> </li> -->
   <li class="menu"><a class= "menu" href="Tareas.html"> Tareas </a></li>
+  <!--- <li class="menu"><a href="Moodle.html">Moodle Ciencias </a></li>
+  <li class="menu"><a href="Matlab.html">Matlab </a></li>
+  <li class="menu"><a href="ExternalLinks.html"> Links </a></li> -->
   <li class="menu"><a class="menu" href="ExGenerales.html"> Exámenes generales </a></li>
   <li class="menu"><a class="menu" href="Clases.html"> Clases </a></li>
   <li class="menu"><a class="menu" href="TareaExamen.html"> Tarea Examen  </a></li>
 </ul>
 
 
-<h2> Libro: Teoría de la Medida de Guillermo Grabinsky. </h2>
-<h2> Profesor: Francisco J. Torres Ayala. </h2>
-<h2> Ayudante: Salvador César Esquivel Calzada.</h2>
-  <!-- <h3> Tareas: enviar por correo a Salvador. Poner
-   en el asunto del correo: Análisis Maestría </h3>
-     <p>Poner en el encabezado (sin acentos): pregunta analisis real </p>
-    -->
+<!--<div class="header">
+ <h2>Blog Name</h2>
+</div> -->
 
+<div class="row">
+ <div class="leftcolumn">
 
-<div>
 
 </div>
+         <div class="card">
+           <h2>
+             Tarea Examen (primer examen)
+           </h2>
 
-<!--
-<h3> <strike> Salón: S102, departamento de matemáticas.
-</strike>  </h3>
--->
+           <h3> <a
+             href="https://www.dropbox.com/s/mnhdfrw6353t8mc/MidTermAnaReal1.pdf?dl=0">
+             Link a pdf </a></h3>
+         </div>
 
 
-<h2> Anuncios  </h2>
 
-<h3> <font color="red"> 20 de marzo  </font> </h3>
-<p>Como vamos a trabajar en lo que viene va a ser como sigue:</p>
-<ol>
-  <li> <p>Voy a estar publicando las "clases" en la página del curso
-(pues ahí puedo usar latex!), pero también voy
-a subir los materiales de pdf en google classroom.</p>
 
- <li> <p>Las tareas y exámenes se van a subir a google classroom. Los links
-para esto se van ir poniendo, en google classroom, conforme avanzamos.</p>
-</ol>
 
-Si tienen dudas pueden escribirme y también a Salvador.
 
-<h3> <font color="red"> 17 de marzo  </font> </h3>
+ </div>
+</div>
 
-<p> Suspensión de clases en la Facultad de Ciencias a partir
-  del martes 17 de marzo. La semana del 17 al 20 de
-  marzo será para reajustar el curso y ver opciones
-  para continuar.</p>
 
-<h3>  <font color="red"> 17 de febrero </font> </h3>
-
-<p> Por la situación del "paro activo", de la Facultad de Ciencias,
-las clases se reanudan el día miércoles 19 (mismo salón, misma hora)
-y, por esta semana, no habrá ejercicio para entregar.  </p>
-
-<h3> <font color="red"> 11 de febrero </font> </h3>
-<ul>
-  <li >Debido al paro en la Facultad de Ciencias, no habrá
-clase los días 11,12 y 13 de febrero. </li>
-  <li > El ejercicio para entregar
-se anunciará el miércoles 12 de febrero por la tarde, en la sección de  <a href="Tareas.html"> Tareas </a> y
-se mandará por correo a Salvador, a mas tardar el jueves 13, a la 1pm. </li>
-  <li> Por favor, leer las secciones 2 y 3, del capítulo dos del libro. </li>
-</ul>
-
-      </div>
-
-    </div>
-  </body>
 </html>
